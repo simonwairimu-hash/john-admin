@@ -22,7 +22,7 @@ const ProductsPage = async ({
       createdAt:'desc'
     }
   });
-  const productsData = JSON.parse(JSON.stringify(products));
+  //const productsData = JSON.parse(JSON.stringify(products));
   
   const formattedProducts: ProductColumn[] = products.map((item)=>({
     id: item.id,

@@ -59,7 +59,7 @@ export const BillboardForm:React.FC<BillboardFormProps> = ({
       router.refresh();
       router.push(`/${params.storeId}/billboards`);
       toast.success(toastMessage)
-    } catch (error) {
+    } catch{
       toast.error("Something went wrong.")
     }finally {
       setLoading(false);
@@ -72,7 +72,7 @@ export const BillboardForm:React.FC<BillboardFormProps> = ({
       router.refresh();
       router.push(`/${params.storeId}/billboards`);
       toast.success("Billboard deleted")
-    }catch (error){
+    }catch{
       toast.error("Remove all categories using this billboard first");
     }finally{
       setLoading(false)
