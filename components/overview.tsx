@@ -32,7 +32,7 @@ export const Overview:React.FC<OverviewProps>=({
   )
 }*/
 "use client";
-import { Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, CartesianGrid, Area, AreaChart, Legend } from "recharts";
+import { ResponsiveContainer, XAxis, YAxis, Tooltip, CartesianGrid, Area, AreaChart, Legend } from "recharts";
 
 interface OverviewProps {
   data: any[];
